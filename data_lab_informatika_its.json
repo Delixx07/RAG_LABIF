@@ -1,0 +1,794 @@
+{
+  "institusi": "Institut Teknologi Sepuluh Nopember (ITS) Surabaya",
+  "fakultas": "Fakultas Teknologi Elektro dan Informatika Cerdas (FTEIC)",
+  "departemen": "Departemen Teknik Informatika",
+  "website_departemen": "https://www.its.ac.id/informatika/",
+  "alamat": "Kampus ITS, Jl. Raya ITS, Keputih, Kec. Sukolilo, Kota Surabaya, Jawa Timur 60111",
+  "gedung_departemen": "Gedung Departemen Teknik Informatika ITS, Kampus ITS Sukolilo, Surabaya",
+  "laboratorium": [
+    {
+      "id": "RPL",
+      "nama": "Laboratorium Rekayasa Perangkat Lunak",
+      "nama_inggris": "Laboratory of Software Engineering",
+      "singkatan": "RPL",
+      "alias": ["RPL", "Lab RPL", "Software Engineering", "Lab Software Engineering", "Rekayasa Perangkat Lunak"],
+      "website": "https://www.its.ac.id/informatika/laboratorium-rekayasa-perangkat-lunak/",
+      "lokasi": "Gedung Departemen Teknik Informatika ITS, Kampus ITS Sukolilo, Surabaya",
+      "kepala_laboratorium": {
+        "nama": "Dr. Sarwosri, S.Kom., MT.",
+        "email": "sarwosri@if.its.ac.id",
+        "inisial": "SR",
+        "profil_url": "https://www.its.ac.id/informatika/profil-siti-rochimah/"
+      },
+      "deskripsi": "Laboratorium Rekayasa Perangkat Lunak menawarkan bidang minat yang berfokus pada keahlian melakukan pengujian perangkat lunak, kemampuan mengelola proyek perangkat lunak, kemampuan mengurangi risiko kesalahan perangkat lunak, dan kemampuan membuat perangkat lunak game.",
+      "bidang_keahlian": [
+        "Pengujian perangkat lunak",
+        "Manajemen proyek perangkat lunak",
+        "Pengurangan risiko kesalahan perangkat lunak",
+        "Pengembangan perangkat lunak game"
+      ],
+      "mata_kuliah": [
+        "Penjaminan Mutu Perangkat Lunak",
+        "Arsitektur Perangkat Lunak",
+        "Evolusi Perangkat Lunak",
+        "Konstruksi Perangkat Lunak",
+        "Penyempurnaan Proses Perangkat Lunak",
+        "Ekonomi Rekayasa Perangkat Lunak",
+        "Topik Khusus RPL"
+      ],
+      "fasilitas": {
+        "komputer": [
+          "Processor Intel Core i3 Gen-3, i5 Gen-8, sampai Intel Xeon E5-2640 dengan RAM 4GB-16GB",
+          "HDD minimal 1TB",
+          "Monitor 19 inci",
+          "LED TV 55 inci"
+        ]
+      },
+      "dosen_anggota": [
+        {
+          "nama": "Dr. Sarwosri, S.Kom., MT.",
+          "jabatan": "Ketua RMK / Kepala Laboratorium",
+          "email": "sarwosri@its.ac.id",
+          "inisial": "SR"
+        },
+        {
+          "nama": "Ir. Siti Rochimah, MT., Ph.D.",
+          "jabatan": "Anggota",
+          "email": "siti@its.ac.id",
+          "inisial": "ST"
+        },
+        {
+          "nama": "Prof. Daniel Oranova Siahaan, S.Kom., M.Sc. PD.Eng.",
+          "jabatan": "Anggota",
+          "email": "daniel@its.ac.id",
+          "inisial": "DO"
+        },
+        {
+          "nama": "Prof. Dr. Umi Laili Yuhana S.Kom., M.Sc.",
+          "jabatan": "Anggota",
+          "email": "yuhana@its.ac.id",
+          "inisial": "UY"
+        },
+        {
+          "nama": "Rizky Januar Akbar, S.Kom., M.Eng.",
+          "jabatan": "Anggota",
+          "email": "rizky@its.ac.id",
+          "inisial": "RJ"
+        },
+        {
+          "nama": "Bintang Nuralamsyah, S.Kom, M.Kom.",
+          "jabatan": "Anggota",
+          "email": "bintang@its.ac.id",
+          "inisial": "BN"
+        },
+        {
+          "nama": "Ir. Suhadi Lili, M.T.I.",
+          "jabatan": "Anggota",
+          "email": "suhadi.lili@its.ac.id",
+          "inisial": "SL"
+        }
+      ],
+      "asisten_2022_2023": {
+        "angkatan_2022": [
+          "Farrell Matthew Lim",
+          "Reynaldi Neo Ramadani",
+          "Ainun Nadhifah Syamsiyah",
+          "Keanu Fortuna Taufan",
+          "Aloysius Juan Farrel Lumentut",
+          "Fawwas Aldy Nurramdhan Kaisar"
+        ],
+        "angkatan_2023": [
+          "Adri Fadhlansyah Aldinata",
+          "Nicholas",
+          "Azka Rizqullah Ramadhani",
+          "Muammar Bahalwan",
+          "Andrew Wallace",
+          "Nur Muhammad Faiz",
+          "I Kadek Arya Deva Artana"
+        ]
+      }
+    },
+    {
+      "id": "KBJ",
+      "nama": "Laboratorium Komputasi Berbasis Jaringan",
+      "nama_inggris": "Lab Net Centric Computing (NCC) / Laboratory of Network-Based Computing",
+      "singkatan": "KBJ",
+      "nama_sekarang": "NCC (Net Centric Computing)",
+      "alias": ["KBJ", "NCC", "Net Centric Computing", "Lab NCC", "Lab KBJ", "Network Based Computing", "Komputasi Berbasis Jaringan", "NBC"],
+      "website": "https://www.its.ac.id/informatika/laboratorium-komputasi-berbasis-jaringan/",
+      "lokasi": "Gedung Departemen Teknik Informatika ITS, Kampus ITS Sukolilo, Surabaya",
+      "kepala_laboratorium": {
+        "nama": "Prof. Tohari Ahmad, S.Kom., M.IT., Ph.D.",
+        "email": "tohari@if.its.ac.id",
+        "inisial": "TA",
+        "profil_url": "https://www.its.ac.id/informatika/profil-tohari-ahmad/"
+      },
+      "deskripsi": "Laboratorium Komputasi Berbasis Jaringan menawarkan bidang keahlian yang ditekankan pada kemampuan lulusan sarjana/magister/doktor dalam membangun infrastruktur jaringan yang aman, kemampuan membangun sistem grid, kemampuan membangun aplikasi jaringan sesuai standar, dan kemampuan membangun aplikasi multimedia berbasis jaringan.",
+      "bidang_keahlian": [
+        "Pembangunan infrastruktur jaringan yang aman",
+        "Pembangunan sistem grid",
+        "Pengembangan aplikasi jaringan sesuai standar",
+        "Pengembangan aplikasi multimedia berbasis jaringan"
+      ],
+      "mata_kuliah": [
+        "Komputasi Bergerak",
+        "Sistem Terdistribusi",
+        "Keamanan Informasi dan Jaringan",
+        "Jaringan Multimedia",
+        "Komputasi Awan",
+        "Forensik Digital",
+        "Komputasi Pervasif dan Jaringan Sensor",
+        "Topik Khusus Komputasi berbasis Jaringan"
+      ],
+      "fasilitas": {
+        "komputer": [
+          "Processor Intel Core i3 Gen-3, i5 Gen-8, sampai Intel Xeon E5-2640 dengan RAM 4GB-16GB",
+          "HDD minimal 1TB",
+          "Monitor 19 inci",
+          "LED TV 55 inci"
+        ]
+      },
+      "dosen_anggota": [
+        {
+          "nama": "Prof. Tohari Ahmad, S.Kom., M.IT., Ph.D.",
+          "jabatan": "Ketua RMK / Kepala Laboratorium",
+          "email": "tohari@its.ac.id",
+          "inisial": "TA"
+        },
+        {
+          "nama": "Bagus Jati Santoso, S.Kom., Ph.D.",
+          "jabatan": "Anggota",
+          "email": "bagus@its.ac.id",
+          "inisial": "BJ"
+        },
+        {
+          "nama": "Hudan Studiawan, S.Kom., M.Kom., Ph.D.",
+          "jabatan": "Anggota",
+          "email": "hudan@its.ac.id",
+          "inisial": "HS"
+        },
+        {
+          "nama": "Prof. Ir. Ary Mazharuddin Shiddiqi, S.Kom., M.Comp.Sc., Ph.D.",
+          "jabatan": "Anggota",
+          "email": "ary.shiddiqi@its.ac.id",
+          "inisial": "AM"
+        },
+        {
+          "nama": "Moch. Nafkhan Alzamzami, S.T., M.T.",
+          "jabatan": "Anggota",
+          "email": "nafkhan@its.ac.id",
+          "inisial": "NZ"
+        }
+      ]
+    },
+    {
+      "id": "KCV",
+      "nama": "Laboratorium Komputasi Cerdas dan Visi",
+      "nama_inggris": "Laboratory of Intelligent Computing and Vision",
+      "singkatan": "KCV",
+      "alias": ["KCV", "Lab KCV", "Intelligent Computing and Vision", "Komputasi Cerdas dan Visi", "ICV"],
+      "website": "https://www.its.ac.id/informatika/laboratorium-komputasi-cerdas-dan-visi/",
+      "lokasi": "Gedung Departemen Teknik Informatika ITS, Kampus ITS Sukolilo, Surabaya",
+      "kepala_laboratorium": {
+        "nama": "Prof. Dr. Eng. Nanik Suciati, S.Kom., M.Kom.",
+        "email": "nanik@if.its.ac.id",
+        "inisial": "NS",
+        "profil_url": "https://www.its.ac.id/informatika/profil-nanik-suciati/"
+      },
+      "deskripsi": "Laboratorium Komputasi Cerdas dan Visi menawarkan bidang keahlian yang ditekankan pada kemampuan lulusan dalam memanipulasi dan menganalisis data citra pada berbagai bidang aplikasi (a.l. biomedika, industri), kemampuan menerapkan metode sistem cerdas pada berbagai bidang aplikasi, dan kemampuan memodelkan dan mengoptimasikan sistem nyata.",
+      "bidang_keahlian": [
+        "Analisis dan manipulasi data citra (biomedika, industri)",
+        "Penerapan metode sistem cerdas",
+        "Pemodelan dan optimasi sistem nyata"
+      ],
+      "mata_kuliah": [
+        "Pengolahan Citra Digital",
+        "Analisis Data Multivariat",
+        "Data Mining",
+        "Komputasi Biomedik",
+        "Visi Komputer",
+        "Sistem Temu Kembali Informasi",
+        "Robotika",
+        "Analisis Media Sosial",
+        "Topik Khusus KCV"
+      ],
+      "fasilitas": {
+        "komputer": [
+          "Processor Intel Core i7 Gen-12 dengan RAM 16GB, hingga Processor i9 Gen-12 dengan GPU RTX 3080Ti",
+          "HDD minimal 1TB",
+          "Monitor 21 inci Curved",
+          "LED TV 65 inci"
+        ]
+      },
+      "dosen_anggota": [
+        {
+          "nama": "Prof. Dr. Eng. Nanik Suciati, S.Kom., M.Kom.",
+          "jabatan": "Ketua RMK / Kepala Laboratorium",
+          "email": "nanik@its.ac.id",
+          "inisial": "NS"
+        },
+        {
+          "nama": "Prof. Dr. Eng. Chastine Fatichah, S.Kom., M.Kom.",
+          "jabatan": "Anggota",
+          "email": "chastine@its.ac.id",
+          "inisial": "CF"
+        },
+        {
+          "nama": "Prof. Ir. Handayani Tjandrasa, M.Sc., Ph.D.",
+          "jabatan": "Anggota",
+          "email": "handatj@its.ac.id",
+          "inisial": "HT"
+        },
+        {
+          "nama": "Prof. Dr. Agus Zainal Arifin, S.Kom., M.Kom.",
+          "jabatan": "Anggota",
+          "email": "agusza@its.ac.id",
+          "inisial": "AZ"
+        },
+        {
+          "nama": "Dini Adni Navastara, S.Kom., M.Sc.",
+          "jabatan": "Anggota",
+          "email": "dini_navastara@its.ac.id",
+          "inisial": "DA"
+        },
+        {
+          "nama": "Aldinata Rizky Revanda, S.Kom., M.Kom.",
+          "jabatan": "Anggota",
+          "email": "aldinata.rizky@its.ac.id",
+          "inisial": "AI"
+        },
+        {
+          "nama": "Imam Mustafa Kamal, S.ST., Ph.D.",
+          "jabatan": "Anggota",
+          "email": "imamkamal@its.ac.id",
+          "inisial": "MK"
+        }
+      ],
+      "asisten_2022_2023": {
+        "angkatan_2022": [
+          "Andika Rahman Teja",
+          "Lucky Santoso",
+          "Taib Izzat Samawi",
+          "Almira Raisa Izzatina",
+          "Fairuuz Azmi Firas",
+          "Mochammad Zharif"
+        ],
+        "angkatan_2023": [
+          "Daniel Adhitthana",
+          "Cathleen Gracia",
+          "Miskiyah",
+          "Tamam Fajar Briliansyah",
+          "Muhammad Ryan Fikri N.",
+          "Nixon Castroman",
+          "Muhammad Farhan Arya W."
+        ]
+      }
+    },
+    {
+      "id": "NETICS",
+      "nama": "Laboratorium Teknologi Jaringan dan Keamanan Siber Cerdas",
+      "nama_inggris": "Laboratory of Intelligent Network Technology and Cyber Security",
+      "singkatan": "NETICS",
+      "nama_lama": "Laboratorium Arsitektur dan Jaringan Komputer (AJK)",
+      "alias": ["NETICS", "Lab NETICS", "AJK", "Arsitektur dan Jaringan Komputer", "Intelligent Network Technology and Cyber Security", "Keamanan Siber", "Cyber Security"],
+      "website": "https://www.its.ac.id/informatika/laboratorium-arsitektur-dan-jaringan-komputer/",
+      "lokasi": "Gedung Departemen Teknik Informatika ITS, Kampus ITS Sukolilo, Surabaya",
+      "kepala_laboratorium": {
+        "nama": "Royyana Muslim Ijtihadie, S.Kom., M.Kom., Ph.D.",
+        "email": "roy@if.its.ac.id",
+        "inisial": "RM",
+        "profil_url": "https://www.its.ac.id/informatika/profil-royyana-muslim-ijtihadie/"
+      },
+      "deskripsi": "Laboratorium Teknologi Jaringan dan Keamanan Siber Cerdas menawarkan bidang keahlian yang ditekankan pada kemampuan lulusan dalam membangun berbagai macam arsitektur jaringan sesuai standar teknologi terkini dan menerapkan keamanan jaringan. Laboratorium ini memiliki layout seperti ruang kelas dan sering digunakan untuk perkuliahan, praktikum, workshop, dan Computer Based Test (CBT).",
+      "bidang_keahlian": [
+        "Pembangunan arsitektur jaringan sesuai standar teknologi terkini",
+        "Penerapan keamanan jaringan",
+        "Keamanan siber cerdas"
+      ],
+      "mata_kuliah": [
+        "Sistem Operasi",
+        "Jaringan Komputer",
+        "Pemrograman Jaringan",
+        "Jaringan Nirkabel",
+        "Teknologi Antar Jaringan",
+        "Perancangan Keamanan Sistem Dan Jaringan",
+        "Desain dan Audit Jaringan",
+        "Teknologi IoT",
+        "Topik Khusus Teknologi Jaringan dan Keamanan Siber Cerdas"
+      ],
+      "fasilitas": {
+        "komputer": [
+          "28 Unit Komputer Intel Core i7 dengan RAM minimal 16GB",
+          "1 Unit Server Praktikum: Dell Power Edge R650 CTO Intel Xeon Gold 6338 2G, Memory 32GB RDIMM, SSD 2.4TB",
+          "1 Unit Server GPU Prosesor i9",
+          "Ruang Rapat / Ruang Sidang dengan Smart TV",
+          "Audio System"
+        ],
+        "catatan_khusus": "Laboratorium dapat direservasi melalui http://reservasi.if.its.ac.id/ dengan mengikuti SOP. Berlaku skala prioritas untuk Departemen Teknik Informatika."
+      },
+      "dosen_anggota": [
+        {
+          "nama": "Royyana Muslim Ijtihadie, S.Kom., M.Kom., Ph.D.",
+          "jabatan": "Ketua RMK / Kepala Laboratorium",
+          "email": "roy@its.ac.id",
+          "inisial": "RM"
+        },
+        {
+          "nama": "Dr. Baskoro Adi P., S.Kom., M.Kom.",
+          "jabatan": "Anggota",
+          "email": "baskoro@its.ac.id",
+          "inisial": "BS"
+        },
+        {
+          "nama": "Dr. Radityo Anggoro, S.Kom., M.Sc.",
+          "jabatan": "Anggota",
+          "email": "onggo@its.ac.id",
+          "inisial": "RA"
+        },
+        {
+          "nama": "Prof. Ir. Supeno Djanali, M.Sc., Ph.D.",
+          "jabatan": "Anggota",
+          "email": "supeno@its.ac.id",
+          "inisial": "SD"
+        },
+        {
+          "nama": "Dr. Wahyu Suadi, S.Kom., M.Kom.",
+          "jabatan": "Anggota",
+          "email": "wsuadi@its.ac.id",
+          "inisial": "WS"
+        }
+      ],
+      "asisten_2022_2023": {
+        "angkatan_2022": [
+          "Ricardo Supriyanto",
+          "Jericho Nathanael Chrisnanta",
+          "Tunas Abdi Pranata",
+          "Muhammad Bimatara Indianto",
+          "Iftala Zahri Sukmana",
+          "Mohammad Idris Arif Budiman",
+          "Riyanda Cavin Sinambela"
+        ],
+        "angkatan_2023": [
+          "Rouli Elizabeth Geraldine Aritonang",
+          "Faiz Muhammad Kautsar",
+          "Faith Mary Sani",
+          "Muhammad Nabil Afrizal Rahmadani",
+          "Kadek Fajar Pramartha Yasodana",
+          "Athallah Rajendra Wibisono",
+          "Fadhil Revinno Hairiman"
+        ]
+      }
+    },
+    {
+      "id": "GIGA",
+      "nama": "Laboratorium Grafika, Interaksi, Gim dan Analitik",
+      "nama_inggris": "Laboratory of Graphics, Interaction, Game and Analytics",
+      "singkatan": "GIGa",
+      "alias": ["GIGa", "GIGA", "Lab GIGa", "Lab GIGA", "Grafika Interaksi dan Game", "Graphics Interaction Game", "Game Lab", "Lab Game", "GIG"],
+      "website": "https://www.its.ac.id/informatika/laboratorium-grafika-interaksi-dan-game/",
+      "lokasi": "Gedung Departemen Teknik Informatika ITS, Kampus ITS Sukolilo, Surabaya",
+      "kepala_laboratorium": {
+        "nama": "Wijayanti Nurul Khotimah, S.Kom., M.Sc., Ph.D.",
+        "email": "wijayanti.nurul@its.ac.id",
+        "inisial": "WN",
+        "profil_url": "https://www.its.ac.id/informatika/id/profil-wijayanti-nurul-khotimah/"
+      },
+      "deskripsi": "Laboratorium Grafika, Interaksi, Gim dan Analitik menawarkan bidang keahlian yang ditekankan pada kemampuan lulusan dalam mendesain, mengembangkan dan mendokumentasikan proses pembuatan game sesuai dengan standar. Serta membuat model 3 dimensi dan pemrograman di dalam realitas virtual serta aplikasi realitas virtual 3 dimensi dengan menggunakan game engine.",
+      "bidang_keahlian": [
+        "Desain dan pengembangan game",
+        "Pemodelan 3D",
+        "Realitas virtual dan augmentasi",
+        "Grafika komputer",
+        "Interaksi manusia dan komputer"
+      ],
+      "mata_kuliah": [
+        "Animasi Komputer dan Pemodelan 3D",
+        "Desain Pengalaman Pengguna (UX Design)",
+        "Game Cerdas (Intelligent Game)",
+        "Game Edukasi dan Simulasi",
+        "Game Engine",
+        "Grafika Komputer",
+        "Interaksi Manusia dan Komputer",
+        "Realitas X (Reality X)",
+        "Teknik Pengembangan Game",
+        "Topik Dalam Grafika Komputer",
+        "Topik Dalam Interaksi Manusia dan Komputer",
+        "Topik Dalam Pengembangan Game, Realitas Virtual, dan Realitas Augmentasi"
+      ],
+      "fasilitas": {
+        "komputer": [
+          "PC Client: Intel Core i7 Gen 12, RAM 32GB, SSD 1TB, Monitor 24 inci Curved",
+          "PC High End: Intel Core i9-12900K, 64GB DDR5, RTX 3080Ti 12GB",
+          "Oculus Rift Set (Game controller)",
+          "Oculus VR Development KIT DK-2-V51-BDL",
+          "HTC VIVE Virtual Reality",
+          "KAT Walk Plus VR Treadmill",
+          "3D Printer"
+        ]
+      },
+      "dosen_anggota": [
+        {
+          "nama": "Wijayanti Nurul Khotimah, S.Kom., M.Sc., Ph.D.",
+          "jabatan": "Ketua RMK / Kepala Laboratorium",
+          "email": "wijayanti.nurul@its.ac.id",
+          "inisial": "WN"
+        },
+        {
+          "nama": "Imam Kuswardayan, S.Kom., MT.",
+          "jabatan": "Anggota",
+          "email": "imam@its.ac.id",
+          "inisial": "IM"
+        },
+        {
+          "nama": "Dr. Eng. Darlis Herumurti, S.Kom., M.Kom.",
+          "jabatan": "Anggota",
+          "email": "darlis@its.ac.id",
+          "inisial": "DH"
+        },
+        {
+          "nama": "Dr. Anny Yuniarti, S.Kom., M.Comp.Sc.",
+          "jabatan": "Anggota",
+          "email": "anny@its.ac.id",
+          "inisial": "AY"
+        },
+        {
+          "nama": "Hadziq Fabroyir, S.Kom., Ph.D.",
+          "jabatan": "Anggota",
+          "email": "hadziq@its.ac.id",
+          "inisial": "HF"
+        },
+        {
+          "nama": "Siska Arifiani, S.Kom., M.Kom.",
+          "jabatan": "Anggota",
+          "email": "siska@its.ac.id",
+          "inisial": "SA"
+        }
+      ]
+    },
+    {
+      "id": "AP",
+      "nama": "Laboratorium Algoritma dan Pemrograman",
+      "nama_inggris": "Laboratory of Algorithm and Programming",
+      "singkatan": "AP",
+      "alias": ["AP", "Lab AP", "Algorithm and Programming", "Algoritma dan Pemrograman", "Lab Algoritma", "Lab Pemrograman"],
+      "website": "https://www.its.ac.id/informatika/laboratorium-algoritma-dan-pemrograman/",
+      "lokasi": "Gedung Departemen Teknik Informatika ITS, Kampus ITS Sukolilo, Surabaya",
+      "kepala_laboratorium": {
+        "nama": "Dr. Dwi Sunaryono, S.Kom., M.Kom.",
+        "email": "dwi@if.its.ac.id",
+        "inisial": "DS",
+        "profil_url": "https://www.its.ac.id/informatika/id/profil-dwi-sunaryono/"
+      },
+      "deskripsi": "Laboratorium Algoritma dan Pemrograman menawarkan bidang keahlian yang ditekankan pada kemampuan lulusan dalam merancang dan menganalisa algoritma dalam menyelesaikan permasalahan secara efektif dan efisien berdasarkan kaidah pemrograman yang kuat, mampu mengaplikasikan model pemrograman yang mendasari berbagai bahasa pemrograman yang ada, serta mampu memilih bahasa pemrograman untuk menghasilkan aplikasi yang sesuai.",
+      "bidang_keahlian": [
+        "Perancangan dan analisis algoritma",
+        "Pemrograman berbasis kerangka kerja",
+        "Pengembangan aplikasi mobile",
+        "Pemrograman berbasis antarmuka"
+      ],
+      "mata_kuliah": [
+        "Dasar Pemrograman",
+        "Struktur Data",
+        "Pemrograman Berorientasi Objek",
+        "Perancangan dan Analisis Algoritma",
+        "Pemrograman Web",
+        "Pemrograman Berbasis Kerangka Kerja",
+        "Pengembangan Analisis Algoritma",
+        "Pemrograman Berbasis Antarmuka",
+        "Pemrograman Perangkat Bergerak",
+        "Topik Khusus Algoritma dan Pemrograman"
+      ],
+      "fasilitas": {
+        "komputer": [
+          "PC Client: Intel Core i7 Gen 12, RAM 32GB, SSD 1TB",
+          "Monitor 24 inci",
+          "PC High End: Intel Core i9-12900K, 64GB DDR5, RTX 3080Ti 12GB",
+          "TV 65 inci"
+        ]
+      },
+      "dosen_anggota": [
+        {
+          "nama": "Dr. Dwi Sunaryono, S.Kom., M.Kom.",
+          "jabatan": "Ketua RMK / Kepala Laboratorium",
+          "email": "dwi@its.ac.id",
+          "inisial": "DS"
+        },
+        {
+          "nama": "Prof. Dr. Diana Purwitasari, S.Kom., M.Sc.",
+          "jabatan": "Anggota",
+          "email": "diana@its.ac.id",
+          "inisial": "DP"
+        },
+        {
+          "nama": "Dr. Yudhi Purwananto, S.Kom., M.Kom.",
+          "jabatan": "Anggota",
+          "email": "yudhi@its.ac.id",
+          "inisial": "YP"
+        },
+        {
+          "nama": "Rully Soelaiman, S.Kom., M.Kom.",
+          "jabatan": "Anggota",
+          "email": "rully@its.ac.id",
+          "inisial": "RL"
+        },
+        {
+          "nama": "Fajar Baskoro, S.Kom., MT.",
+          "jabatan": "Anggota",
+          "email": "fajar@its.ac.id",
+          "inisial": "FB"
+        },
+        {
+          "nama": "Ir. Misbakhul Munir Irfan Subakti, S.Kom., M.Sc.Eng, M.Phil, IPM.",
+          "jabatan": "Anggota",
+          "email": "irfan@its.ac.id",
+          "inisial": "IS"
+        },
+        {
+          "nama": "Agus Budi Raharjo, S.Kom., M.Kom., Ph.D.",
+          "jabatan": "Anggota",
+          "email": "agus.budi@its.ac.id",
+          "inisial": "AB"
+        }
+      ],
+      "asisten_2022_2023": {
+        "angkatan_2022": [
+          "Ralfazza Rajariandhana",
+          "Shafa Kirana Mulia",
+          "Moch. Avin",
+          "Muhammad Iqbal Ramadhan",
+          "Arya Gading Prinandika",
+          "Hardy Tee",
+          "Nabhyla Niagara Rannuan"
+        ],
+        "angkatan_2023": [
+          "Muhammad Rengga Putra Kuncoro",
+          "Junathan Richie",
+          "Gerry Nicholas",
+          "Cindy Revalia",
+          "Adinda Shafa Najla",
+          "Augista Eksofon Pradana",
+          "Fernando",
+          "I Gusti Ngurah Arya Sudewa"
+        ]
+      }
+    },
+    {
+      "id": "MCI",
+      "nama": "Laboratorium Manajemen Cerdas Informasi",
+      "nama_inggris": "Laboratory of Intelligent Information Management",
+      "singkatan": "MCI",
+      "alias": ["MCI", "Lab MCI", "Intelligent Information Management", "Manajemen Informasi Cerdas", "Manajemen Cerdas Informasi", "IIM", "I2M"],
+      "website": "https://www.its.ac.id/informatika/laboratorium-manajemen-cerdas-informasi/",
+      "lokasi": "Gedung Departemen Teknik Informatika ITS, Kampus ITS Sukolilo, Surabaya",
+      "kepala_laboratorium": {
+        "nama": "Ratih Nur Esti Anggraini, S.Kom., M.Sc., Ph.D.",
+        "email": "ratih_nea@if.its.ac.id",
+        "inisial": "RN",
+        "profil_url": "https://www.its.ac.id/informatika/id/profil-ratih-nur-esti-anggraini/"
+      },
+      "deskripsi": "Laboratorium Manajemen Cerdas Informasi menawarkan bidang keahlian yang ditekankan pada kemampuan lulusan dalam menganalisis, mensintesa dan mengevaluasi proses bisnis dan sistem informasi pada sistem Enterprise, mengimplementasikan rekayasa pengetahuan ke dalam suatu aplikasi, melakukan investigasi, pengujian, evaluasi kematangan dan kepatutan terhadap prosedur standard dan tata kelola teknologi informasi, melakukan tata kelola proyek dan sumber daya manusia, serta merancang dan mengimplementasikan solusi basis data terdistribusi dan teknologi Big Data.",
+      "bidang_keahlian": [
+        "Analisis dan evaluasi proses bisnis dan sistem informasi Enterprise",
+        "Rekayasa pengetahuan",
+        "Tata kelola teknologi informasi",
+        "Basis data terdistribusi dan Big Data",
+        "Tata kelola proyek"
+      ],
+      "mata_kuliah": [
+        "Sistem Enterprise",
+        "Rekayasa Pengetahuan",
+        "Sistem Informasi Geografis",
+        "Audit Sistem",
+        "Tata Kelola Teknologi Informasi",
+        "Basis Data Terdistribusi",
+        "Big Data",
+        "Topik Khusus Manajemen Informasi"
+      ],
+      "fasilitas": {
+        "komputer": [
+          "PC High-End: Intel i9 Gen 10, 128GB RAM, 2TB SSD, GPU NVIDIA Quadro RTX 8000 48GB",
+          "PC Client: Intel i7 Gen 12, 32GB RAM, 1TB SSD",
+          "Android TV 65 inci",
+          "3D Printer"
+        ]
+      },
+      "dosen_anggota": [
+        {
+          "nama": "Ratih Nur Esti Anggraini, S.Kom., M.Sc., Ph.D.",
+          "jabatan": "Ketua RMK / Kepala Laboratorium",
+          "email": "ratih_nea@its.ac.id",
+          "inisial": "RN"
+        },
+        {
+          "nama": "Prof. Drs. Ec. Ir. Riyanarto Sarno, M.Sc., Ph.D.",
+          "jabatan": "Anggota",
+          "email": "riyanarto@its.ac.id",
+          "inisial": "RS"
+        },
+        {
+          "nama": "Dr. Adhatus Solichah Ahmadiyah, S.Kom., M.Sc.",
+          "jabatan": "Anggota",
+          "email": "adhatus@its.ac.id",
+          "inisial": "AL"
+        },
+        {
+          "nama": "Nurul Fajrin Ariyani, S.Kom., M.Sc.",
+          "jabatan": "Anggota",
+          "email": "nurulfajrin@its.ac.id",
+          "inisial": "NF"
+        },
+        {
+          "nama": "Abdul Munif, S.Kom., M.Sc.",
+          "jabatan": "Anggota",
+          "email": "munif@its.ac.id",
+          "inisial": "MN"
+        },
+        {
+          "nama": "Shintami Chusnul Hidayati, S.Kom., M.Sc., Ph.D.",
+          "jabatan": "Anggota",
+          "email": "shintami@its.ac.id",
+          "inisial": "SC"
+        },
+        {
+          "nama": "Dr. Kelly Rossa Sungkono, S.Kom., M.Kom.",
+          "jabatan": "Anggota",
+          "email": "kelly@its.ac.id",
+          "inisial": "KR"
+        }
+      ],
+      "asisten_2022_2023": {
+        "angkatan_2022": [
+          "Karina Rahmawati",
+          "Wildan Fauzy Maulana Hasyim",
+          "Muhammad Abdurrahman Faiz",
+          "Lathifah Sahda",
+          "Fairna Mustika Hermafidhanti",
+          "Fatiya Izzati",
+          "Yoga Firman Syahputra"
+        ],
+        "angkatan_2023": [
+          "Muiz Surya Fata",
+          "Dustin Felix",
+          "Athalla Abhinaya",
+          "Kevin Andreas",
+          "Rachel Bronzen",
+          "Rafaela Shyra Ashma' Ramadhani",
+          "Rafie Zaidan Umara"
+        ]
+      }
+    },
+    {
+      "id": "PKT",
+      "nama": "Laboratorium Pemodelan dan Komputasi Terapan",
+      "nama_inggris": "Laboratory of Applied Modelling and Computation",
+      "singkatan": "PKT",
+      "alias": ["PKT", "Lab PKT", "Applied Modelling and Computation", "Pemodelan dan Komputasi Terapan", "Lab Pemodelan", "Lab Komputasi Terapan", "AMC"],
+      "website": "https://www.its.ac.id/informatika/laboratorium-pemodelan-dan-komputasi-terapan/",
+      "lokasi": "Gedung Departemen Teknik Informatika ITS, Kampus ITS Sukolilo, Surabaya",
+      "kepala_laboratorium": {
+        "nama": "Dr. Bilqis Amaliah, S.Kom., M.Kom.",
+        "email": "bilqis@if.its.ac.id",
+        "inisial": "BA",
+        "profil_url": "https://www.its.ac.id/informatika/profil-bilqis-amaliah/"
+      },
+      "deskripsi": "Laboratorium Pemodelan dan Komputasi Terapan mewadahi riset dan kerjasama industri di bidang pemodelan dan simulasi, peramalan sains, optimasi, serta komputasional saintifik.",
+      "bidang_keahlian": [
+        "Pemodelan dan simulasi",
+        "Peramalan saintifik",
+        "Teknik optimasi",
+        "Pemodelan otomata",
+        "Pemodelan graph",
+        "Komputasi numerik"
+      ],
+      "mata_kuliah": [
+        "Matematika Diskrit",
+        "Aljabar Linier dan Matriks",
+        "Teori Graph dan Otomata",
+        "Komputasi Numerik",
+        "Probabilistik dan Statistik",
+        "Riset Operasi",
+        "Pemodelan dan Simulasi",
+        "Analisis Data Multivariat",
+        "Pemodelan dan Simulasi (pilihan)",
+        "Pemrograman Linier",
+        "Topik Khusus Dasar dan Terapan Komputasi"
+      ],
+      "fasilitas": {
+        "komputer": [
+          "Processor Intel Core i7 Gen-12 dengan RAM 16GB",
+          "HDD minimal 1TB",
+          "Monitor 21 inci Curved",
+          "LED TV 55 inci"
+        ]
+      },
+      "dosen_anggota": [
+        {
+          "nama": "Dr. Bilqis Amaliah, S.Kom., M.Kom.",
+          "jabatan": "Ketua RMK / Kepala Laboratorium",
+          "email": "bilqis@its.ac.id",
+          "inisial": "BA",
+          "bidang_riset": "teknik optimasi"
+        },
+        {
+          "nama": "Prof. Dr. Ir. Joko Lianto Buliali, M.Sc.",
+          "jabatan": "Anggota",
+          "email": "joko@its.ac.id",
+          "inisial": "JL",
+          "bidang_riset": "pemodelan dan simulasi"
+        },
+        {
+          "nama": "Dr. Ahmad Saikhu, S.Si., MT.",
+          "jabatan": "Anggota",
+          "email": "saikhu@its.ac.id",
+          "inisial": "AS",
+          "bidang_riset": "peramalan saintifik"
+        },
+        {
+          "nama": "Victor Hariadi, S.Si., M.Kom.",
+          "jabatan": "Anggota",
+          "email": "victor@its.ac.id",
+          "inisial": "VH",
+          "bidang_riset": "pemodelan otomata"
+        },
+        {
+          "nama": "Arya Yudhi Wijaya, S.Kom., M.Kom.",
+          "jabatan": "Anggota",
+          "email": "arya@its.ac.id",
+          "inisial": "AW",
+          "bidang_riset": "pemodelan graph"
+        },
+        {
+          "nama": "Dr. Eng. Muhamad Hilmil Muchtar Aditya Pradana, S.Kom., M.Sc.",
+          "jabatan": "Anggota",
+          "email": "hilmi@its.ac.id",
+          "inisial": "HM"
+        }
+      ],
+      "asisten_2022_2023": {
+        "angkatan_2022": [
+          "Dana Saputra",
+          "Nabilah Atika Rahma",
+          "Muhammad Rayyan",
+          "Zharga Prayata Zainal"
+        ],
+        "angkatan_2023": [
+          "Sayyid Daffa' Al Mubarok",
+          "Muhammad Daffa Nurrahman",
+          "Abdan Hafidz",
+          "Muhammad Rafli Abdillah",
+          "Randi Palguna Artayasa",
+          "Hikmia Sofia Nur Izzati"
+        ]
+      }
+    }
+  ],
+  "catatan": {
+    "sumber_data": [
+      "https://www.its.ac.id/informatika/id/laboratorium/",
+      "https://www.its.ac.id/informatika/dosen-staff/daftar-dosen/",
+      "Masing-masing halaman laboratorium"
+    ],
+    "tanggal_pengambilan_data": "2026-02-23",
+    "keterangan": "Data tahun pendirian (founding year) per laboratorium tidak tersedia secara eksplisit di website resmi ITS Informatika. Seluruh laboratorium bernaung di bawah Departemen Teknik Informatika ITS yang berdiri sejak tahun 1985 sebagai bagian dari Jurusan Teknik Elektro, kemudian resmi menjadi Jurusan Teknik Informatika pada tahun 1989. Lokasi semua laboratorium berada di satu gedung yang sama, yaitu Gedung Departemen Teknik Informatika di Kampus ITS Sukolilo, Surabaya. Untuk informasi nomor ruangan atau lantai spesifik, silakan menghubungi pihak departemen secara langsung."
+  }
+}
