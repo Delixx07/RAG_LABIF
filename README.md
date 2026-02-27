@@ -341,8 +341,11 @@ result = rag_chain.invoke("Siapa kepala lab RPL?")
 
 
 ---
+## 9.Screenshot GRADIO
+<img width="1862" height="906" alt="image" src="https://github.com/user-attachments/assets/49ddf613-56a8-4e94-82cf-83f77fa5a538" />
 
-## 9. Referensi & Sumber
+
+## 10. Referensi & Sumber
 
 | Komponen              | Sumber                                                                         |
 | --------------------- | ------------------------------------------------------------------------------ |
