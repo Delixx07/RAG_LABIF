@@ -1,8 +1,5 @@
-# 📚 Dokumentasi Sistem RAG — Laboratorium Teknik Informatika ITS
+#  Dokumentasi Sistem RAG — Laboratorium Teknik Informatika ITS
 
-> **Proyek:** Retrieval-Augmented Generation (RAG) untuk Informasi Laboratorium  
-> **Departemen:** Teknik Informatika, Institut Teknologi Sepuluh Nopember (ITS) Surabaya  
-> **Tanggal:** 23 Februari 2026
 
 ---
 
@@ -10,7 +7,7 @@
 
 ### 1.1 Permasalahan
 
-Informasi mengenai laboratorium di Departemen Teknik Informatika ITS tersebar di banyak halaman website dan tidak mudah diakses secara programatik. Pengguna — baik mahasiswa, dosen, maupun pihak eksternal — sering kesulitan mencari informasi seperti:
+Informasi mengenai laboratorium di Departemen Teknik Informatika ITS tersebar di banyak halaman website dan tidak mudah diakses secara programatik. Pengguna baik mahasiswa, dosen, maupun pihak eksternal sering kesulitan mencari informasi seperti:
 
 - Siapa kepala laboratorium tertentu?
 - Dosen siapa saja yang tergabung dalam lab X?
@@ -21,17 +18,10 @@ Informasi mengenai laboratorium di Departemen Teknik Informatika ITS tersebar di
 
 RAG adalah teknik yang menggabungkan dua komponen utama:
 
-1. **Retriever** — mencari dokumen/chunk yang paling relevan dari knowledge base berdasarkan pertanyaan pengguna
-2. **Generator (LLM)** — menggunakan dokumen relevan tersebut sebagai konteks untuk menghasilkan jawaban yang natural
+1. **Retriever**  mencari dokumen/chunk yang paling relevan dari knowledge base berdasarkan pertanyaan pengguna
+2. **Generator (LLM)**  menggunakan dokumen relevan tersebut sebagai konteks untuk menghasilkan jawaban yang natural
 
-Pendekatan ini dipilih dibanding:
 
-| Pendekatan          | Kekurangan                                                  |
-| ------------------- | ----------------------------------------------------------- |
-| **Keyword search**  | Tidak memahami semantik/makna, hanya cocokkan kata          |
-| **Fine-tuning LLM** | Mahal, perlu banyak data, sulit diperbarui                  |
-| **Prompt stuffing** | Token limit terbatas, tidak skalabel                        |
-| **RAG** ✅          | Akurat, mudah diperbarui, hemat token, tidak perlu training |
 
 ---
 
@@ -39,11 +29,13 @@ Pendekatan ini dipilih dibanding:
 
 ### 2.1 Pengumpulan Data
 
-Data dikumpulkan langsung dari website resmi ITS:
+1. Data dikumpulkan langsung dari website resmi ITS:
 
 - `https://www.its.ac.id/informatika/id/laboratorium/`
 - Masing-masing halaman per laboratorium
 - Halaman daftar dosen: `https://www.its.ac.id/informatika/dosen-staff/daftar-dosen/`
+
+2. Data dikumpulkan dengan interview Asisten Lab 
 
 ### 2.2 Format Output: JSON
 
@@ -108,14 +100,14 @@ Data disimpan dalam file `data_lab_informatika_its.json` dengan struktur:
 │         ▼                                               │
 │   ┌─────────────┐     ┌──────────────────────────────┐  │
 │   │  Chunking   │────▶│  Embedding Model             │  │
-│   │  (4 chunk   │     │  paraphrase-multilingual-    │  │
+│   │  (5 chunk   │     │  paraphrase-multilingual-    │  │
 │   │   per lab)  │     │  MiniLM-L12-v2               │  │
 │   └─────────────┘     └──────────────┬───────────────┘  │
 │                                      │                  │
 │                                      ▼                  │
 │                             ┌────────────────┐          │
 │                             │  FAISS Vector  │          │
-│                             │  Store (32 doc)│          │
+│                             │  Store (38 doc)│          │
 │                             └────────────────┘          │
 └─────────────────────────────────────────────────────────┘
 
@@ -138,8 +130,9 @@ Data disimpan dalam file `data_lab_informatika_its.json` dengan struktur:
 │                                   │                     │
 │                                   ▼                     │
 │                      ┌───────────────────────┐          │
-│                      │  LLM: Groq            │          │
-│                      │  llama-3.1-8b-instant │          │
+│                      │  LLM: Groq / Gemini   │          │
+│                      │  llama-3.3-70b /      │          │
+│                      │  gemini-2.5-flash     │          │
 │                      └───────────┬───────────┘          │
 │                                  │                      │
 │                                  ▼                      │
@@ -161,7 +154,7 @@ LLM memiliki **context window** (batas jumlah token). Jika seluruh data dimasukk
 
 ### 4.2 Strategi: Semantic Chunking per Aspek
 
-Setiap laboratorium dipecah menjadi **4 chunk** berdasarkan aspek semantiknya:
+Setiap laboratorium dipecah menjadi **5 chunk** berdasarkan aspek semantiknya:
 
 | Chunk         | Isi                                 | Tujuan                      |
 | ------------- | ----------------------------------- | --------------------------- |
@@ -169,8 +162,9 @@ Setiap laboratorium dipecah menjadi **4 chunk** berdasarkan aspek semantiknya:
 | `dosen`       | Seluruh dosen anggota + email       | Query tentang SDM/kontak    |
 | `mata_kuliah` | Mata kuliah + bidang keahlian       | Query tentang akademik      |
 | `fasilitas`   | Perangkat keras + catatan khusus    | Query tentang infrastruktur |
+| `asisten`     | Daftar asisten angkatan 2022 & 2023 | Query tentang asisten lab   |
 
-**Total:** 8 lab × 4 chunk = **32 dokumen** di vector store
+**Total:** 8 lab × 5 chunk = **38 dokumen** di vector store _(6 lab memiliki data asisten; 2 lab tanpa data asisten = 4 chunk)_
 
 **Keuntungan pendekatan ini dibanding character-based chunking:**
 
@@ -201,14 +195,6 @@ Data laboratorium ITS **sepenuhnya berbahasa Indonesia**. Model embedding berbah
 
 Model `paraphrase-multilingual-MiniLM-L12-v2` dilatih pada data **paralel multibahasa** sehingga memahami semantik Bahasa Indonesia dengan sangat baik, dan tetap ringan untuk dijalankan di Colab gratis.
 
-**Alternatif yang dipertimbangkan:**
-
-| Model                                      | Keunggulan            | Kelemahan               |
-| ------------------------------------------ | --------------------- | ----------------------- |
-| `text-embedding-ada-002` (OpenAI)          | Akurat                | Berbayar, hanya Inggris |
-| `distiluse-base-multilingual-cased-v2`     | Multilingual          | Lebih besar             |
-| `paraphrase-multilingual-MiniLM-L12-v2` ✅ | Ringan + multilingual | Dimensi lebih kecil     |
-
 ---
 
 ### 5.2 Vector Store: FAISS
@@ -225,68 +211,28 @@ Model `paraphrase-multilingual-MiniLM-L12-v2` dilatih pada data **paralel multib
 | **Persistensi**          | Bisa disimpan ke disk dan dimuat ulang                       |
 | **Integrasi LangChain**  | Dukungan penuh via `langchain_community.vectorstores`        |
 
-**Alternatif yang dipertimbangkan:**
-
-| Vector Store | Keunggulan           | Kelemahan untuk kasus ini        |
-| ------------ | -------------------- | -------------------------------- |
-| **Pinecone** | Managed, skalabel    | Berbayar, perlu API key          |
-| **Chroma**   | Persisten, mudah     | Lebih lambat untuk dataset besar |
-| **Weaviate** | Fitur lengkap        | Perlu server terpisah            |
-| **FAISS** ✅ | Cepat, gratis, lokal | Tidak distributed                |
-
-Dengan hanya 32 dokumen, FAISS adalah pilihan **paling optimal** — ringan, gratis, langsung jalan.
+Dengan hanya 38 dokumen, FAISS adalah pilihan **paling optimal** ,ringan, gratis, langsung jalan.
 
 ---
 
-### 5.3 LLM: Groq + `llama-3.1-8b-instant`
+### 5.3 LLM: Perjalanan Eksperimen Model
 
-#### Mengapa Groq API?
+dua model LLM diuji secara berurutan dalam proyek ini. Semua model menggunakan interface `llm` yang sama pada RAG chain penggantian model cukup dilakukan dengan mengubah konfigurasi satu sel.
 
-Groq bukanlah model, melainkan sebuah **platform inference** yang menjalankan LLM open-source di hardware khusus bernama **LPU (Language Processing Unit)**.
-
-| Aspek            | Keterangan                                                |
-| ---------------- | --------------------------------------------------------- |
-| **Kecepatan**    | Hingga ~800 token/detik (jauh lebih cepat dari GPU biasa) |
-| **Biaya**        | **Gratis** untuk pemakaian personal (free tier)           |
-| **Latensi**      | < 1 detik untuk respons pendek                            |
-| **Reliabilitas** | API stabil, tidak perlu download model                    |
-
-#### Mengapa `llama-3.1-8b-instant`?
-
-Model ini adalah varian dari **LLaMA 3.1** buatan Meta yang di-host di Groq:
-
-| Aspek                 | Detail                                    |
-| --------------------- | ----------------------------------------- |
-| **Parameter**         | 8 Miliar (cukup cerdas untuk Q&A faktual) |
-| **Konteks**           | 128K token context window                 |
-| **Kemampuan**         | Bahasa Indonesia cukup baik               |
-| **Kecepatan di Groq** | ~800 token/detik                          |
-| **Biaya**             | 100% Gratis (tier gratis Groq)            |
-
-**Perjalanan pemilihan model — kenapa bukan yang lain:**
+#### Perjalanan Pemilihan Model
 
 ```
-google/flan-t5-large (HuggingFace)
-  ❌ Ditolak: Model ini tidak lagi tersedia di HuggingFace
-             Inference API terbaru (StopIteration error)
-             karena tidak ada "provider mapping"
+Groq: llama-3.3-70b-versatile
+  ✅ Dicoba: 70B parameter, konteks 128K, multilingual
+  ⚠️  Evaluasi: Jawaban lebih baik, namun gaya bahasa kurang natural
+       → Coba model Gemini
 
-HuggingFaceEndpoint (via API)
-  ❌ Ditolak: Deprecated parameter, perlu login terpisah,
-             banyak model tidak tersedia di free tier
-
-Groq + llama-3.1-8b-instant
-  ✅ Dipilih: Gratis, cepat, stabil, mendukung Bahasa Indonesia
+Google Gemini: gemini-2.5-flash   ← MODEL FINAL ✅
+  ✅ Dipilih: Jawaban paling natural, konteks besar, tersedia di API key aktif
 ```
 
-**Model lain yang tersedia di Groq (gratis):**
 
-| Model                     | Kelebihan             | Kekurangan                              |
-| ------------------------- | --------------------- | --------------------------------------- |
-| `llama-3.1-8b-instant` ✅ | Cepat, ringan         | Kurang detail untuk pertanyaan kompleks |
-| `llama-3.3-70b-versatile` | Sangat cerdas         | Sedikit lebih lambat                    |
-| `gemma2-9b-it`            | Bagus untuk instruksi | Bahasa Indonesia kurang kuat            |
-| `mixtral-8x7b-32768`      | Context panjang (32K) | Lebih lambat                            |
+> **Catatan:** Gemini menjadi pilihan saya karena jawaban yang diberikan sangat natural.
 
 ---
 
@@ -333,7 +279,7 @@ LCEL menggantikan `RetrievalQA` yang sudah **deprecated** sejak LangChain 0.2. K
 # 2. LOAD DATA
 data = json.load(open('data_lab_informatika_its.json'))
 
-# 3. CHUNKING → 32 Document objects
+# 3. CHUNKING → 38 Document objects
 docs = lab_to_documents(data)
 
 # 4. EMBEDDING → Vektor 384 dimensi per chunk
@@ -347,8 +293,11 @@ vectorstore = FAISS.from_documents(docs, embedding_model)
 # 6. RETRIEVER → cari top-4 chunk paling relevan
 retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
 
-# 7. LLM → Groq llama-3.1-8b-instant
-llm = ChatGroq(model_name="llama-3.1-8b-instant", temperature=0.1)
+# 7. LLM — pilih salah satu:
+# Opsi A: Groq (gratis, cepat)
+llm = ChatGroq(model_name="llama-3.3-70b-versatile", temperature=0.2)
+# Opsi B: Gemini (natural, terbatas free tier)
+# llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.2)
 
 # 8. RAG CHAIN → Retriever + Prompt + LLM
 rag_chain = RunnableParallel(...) | {result: prompt | llm, source_documents: ...}
@@ -389,7 +338,7 @@ result = rag_chain.invoke("Siapa kepala lab RPL?")
 - **Web scraping otomatis**: Auto-update data JSON secara berkala (cron job)
 - **Hybrid search**: Gabungkan dense retrieval (FAISS) + sparse (BM25) untuk akurasi lebih tinggi
 - **Evaluation**: Implement RAGAs untuk mengukur faithfulness, context precision, dll.
-- **UI Chatbot**: Deploy sebagai Gradio/Streamlit app
+
 
 ---
 
@@ -402,4 +351,4 @@ result = rag_chain.invoke("Siapa kepala lab RPL?")
 | FAISS                 | [github.com/facebookresearch/faiss](https://github.com/facebookresearch/faiss) |
 | Sentence Transformers | [sbert.net](https://www.sbert.net/)                                            |
 | Groq API              | [console.groq.com](https://console.groq.com/)                                  |
-| LLaMA 3.1             | [ai.meta.com](https://ai.meta.com/blog/meta-llama-3-1/)                        |
+| Gemini API            | [aistudio.google](https://aistudio.google.com/)                                |
